@@ -9,6 +9,7 @@ use Filament\PanelProvider;
 use Filament\Support\Colors\Color;
 use Stephenjude\FilamentBlog\BlogPlugin;
 use Filament\Http\Middleware\Authenticate;
+use pxlrbt\FilamentSpotlight\SpotlightPlugin;
 use Illuminate\Session\Middleware\StartSession;
 use Illuminate\Cookie\Middleware\EncryptCookies;
 use Illuminate\Routing\Middleware\SubstituteBindings;
@@ -56,7 +57,8 @@ class AdminPanelProvider extends PanelProvider
                 Authenticate::class,
             ])
             ->plugins([
-                BlogPlugin::make()
+                BlogPlugin::make(),
+                SpotlightPlugin::make(),
             ]);
     }
 }
