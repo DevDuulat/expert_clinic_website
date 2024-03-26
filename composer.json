@@ -12,6 +12,7 @@
         "laravel/sanctum": "^3.3",
         "laravel/tinker": "^2.8",
         "pxlrbt/filament-spotlight": "^1.2",
+        "shuvroroy/filament-spatie-laravel-health": "^2.0",
         "stephenjude/filament-blog": "^3.0"
     },
     "require-dev": {
